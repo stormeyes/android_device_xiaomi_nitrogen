@@ -20,7 +20,7 @@
 set -e
 
 INITIAL_COPYRIGHT_YEAR=2018
-export DEVICE=whyred
+export DEVICE=nitrogen
 export VENDOR=xiaomi
 export TREBLE_COMPATIBLE=1
 
@@ -41,7 +41,7 @@ fi
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and guards
-write_headers "whyred"
+write_headers "nitrogen"
 
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt 1

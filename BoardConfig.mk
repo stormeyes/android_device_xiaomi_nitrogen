@@ -15,7 +15,7 @@
 #
 
 # Board device path
-DEVICE_PATH := device/xiaomi/whyred
+DEVICE_PATH := device/xiaomi/nitrogen
 
 BOARD_VENDOR := xiaomi
 
@@ -49,8 +49,8 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
-TARGET_KERNEL_CONFIG := whyred-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/nitrogen
+TARGET_KERNEL_CONFIG := nitrogen_user_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_CLANG_COMPILE := true
 
@@ -171,8 +171,8 @@ VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 
 # Vendor init
-TARGET_INIT_VENDOR_LIB := libinit_whyred
-TARGET_RECOVERY_DEVICE_MODULES := libinit_whyred
+TARGET_INIT_VENDOR_LIB := libinit_nitrogen
+TARGET_RECOVERY_DEVICE_MODULES := libinit_nitrogen
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
@@ -253,4 +253,4 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 TARGET_USES_MKE2FS := true
 
 # Inherit from proprietary files
-include vendor/xiaomi/whyred/BoardConfigVendor.mk
+include vendor/xiaomi/nitrogen/BoardConfigVendor.mk

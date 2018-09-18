@@ -19,7 +19,7 @@
 
 set -e
 
-export DEVICE=whyred
+export DEVICE=nitrogen
 export VENDOR=xiaomi
 export TREBLE_COMPATIBLE=1
 

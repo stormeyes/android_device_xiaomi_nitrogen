@@ -1,5 +1,5 @@
 #
-# vendor prop for whyred
+# vendor prop for nitrogen
 #
 
 # Audio
